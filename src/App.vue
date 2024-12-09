@@ -3,6 +3,7 @@ import QuickStart from '@/views/QuickStart/index.vue'
 import FlightTrack from '@/views/Flight-Tracker/index.vue'
 import Photorealistic from '@/views/Photorealistic-3D-Tiles/index.vue'
 import VisualizingImagery from '@/views/Visualizing-Imagery/index.vue'
+import Entities from '@/views/Entities/index.vue'
 </script>
 
 <template>
@@ -10,7 +11,8 @@ import VisualizingImagery from '@/views/Visualizing-Imagery/index.vue'
     <!-- <QuickStart></QuickStart> -->
     <!-- <FlightTrack></FlightTrack> -->
     <!-- <Photorealistic></Photorealistic> -->
-    <VisualizingImagery></VisualizingImagery>
+    <!-- <VisualizingImagery></VisualizingImagery> -->
+    <Entities></Entities>
   </div>
 </template>
 
