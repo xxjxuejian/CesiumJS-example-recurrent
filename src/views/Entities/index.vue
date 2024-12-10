@@ -167,6 +167,29 @@ function updatePolylineGlow() {
     })
   }
 }
+
+// 相机控制
+function controlCamera() {
+  // 设置相机的朝向，即相机在水平方向上的旋转角度。
+  const heading = Cesium.Math.toRadians(0)
+  // 设置相机的俯仰角
+  // 俯仰角决定相机视线相对于地面的倾斜角度，负值表示相机向下倾斜，正值表示相机向上倾斜。
+  const pitch = Cesium.Math.toRadians(-30)
+  viewer.zoomTo(wyoming, new Cesium.HeadingPitchRange(heading, pitch))
+}
+
+async function flyTo() {
+  const result = await viewer.flyTo(wyoming)
+  if (result) {
+    viewer.selectedEntity = wyoming
+  }
+}
+
+// 追踪entity，锁定
+function trackedEntity() {
+  wyoming.position = Cesium.Cartesian3.fromDegrees(-107.724, 42.68)
+  viewer.trackedEntity = wyoming
+}
 onMounted(() => {
   init()
 })
@@ -187,6 +210,9 @@ onMounted(() => {
     <button @click="addPolylines">add Polylines</button>
     <button @click="updatePolylineOutline">update PolylineOutline</button>
     <button @click="updatePolylineGlow">update PolylineGlow</button>
+    <button @click="controlCamera">Camera controls</button>
+    <button @click="flyTo">flyTo</button>
+    <button @click="trackedEntity">tracked-Entity</button>
   </div>
 </template>
 
