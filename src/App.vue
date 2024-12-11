@@ -4,6 +4,7 @@ import FlightTrack from '@/views/Flight-Tracker/index.vue'
 import Photorealistic from '@/views/Photorealistic-3D-Tiles/index.vue'
 import VisualizingImagery from '@/views/Visualizing-Imagery/index.vue'
 import Entities from '@/views/Entities/index.vue'
+import GeometryAppearances from './Sandcastle/Showcases/Geometry-Appearances.vue'
 </script>
 
 <template>
@@ -12,7 +13,8 @@ import Entities from '@/views/Entities/index.vue'
     <!-- <FlightTrack></FlightTrack> -->
     <!-- <Photorealistic></Photorealistic> -->
     <!-- <VisualizingImagery></VisualizingImagery> -->
-    <Entities></Entities>
+    <!-- <Entities></Entities> -->
+    <GeometryAppearances></GeometryAppearances>
   </div>
 </template>
 
