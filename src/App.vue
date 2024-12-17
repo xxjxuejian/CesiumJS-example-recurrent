@@ -5,6 +5,8 @@ import Photorealistic from '@/views/Photorealistic-3D-Tiles/index.vue'
 import VisualizingImagery from '@/views/Visualizing-Imagery/index.vue'
 import Entities from '@/views/Entities/index.vue'
 import GeometryAppearances from './Sandcastle/Showcases/Geometry-Appearances.vue'
+import Terrain3D from '@/views/3D-terrain/index.vue'
+import TerrainExample from './Sandcastle/Terrain/TerrainExample.vue'
 </script>
 
 <template>
@@ -14,7 +16,9 @@ import GeometryAppearances from './Sandcastle/Showcases/Geometry-Appearances.vue
     <!-- <Photorealistic></Photorealistic> -->
     <!-- <VisualizingImagery></VisualizingImagery> -->
     <!-- <Entities></Entities> -->
-    <GeometryAppearances></GeometryAppearances>
+    <!-- <GeometryAppearances></GeometryAppearances> -->
+    <!-- <Terrain3D></Terrain3D> -->
+    <TerrainExample></TerrainExample>
   </div>
 </template>
 
